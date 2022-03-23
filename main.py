@@ -9,6 +9,24 @@ class Ui(QtWidgets.QMainWindow):
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.show()
 
+    def mousePressEvent(self, event):
+        if event.button() == QtCore.Qt.LeftButton:
+            self.old_pos = event.pos()
+
+        # вызывается при отпускании кнопки мыши
+
+    def mouseReleaseEvent(self, event):
+        if event.button() == QtCore.Qt.LeftButton:
+            self.old_pos = None
+
+        # вызывается всякий раз, когда мышь перемещается
+
+    def mouseMoveEvent(self, event):
+        if not self.old_pos:
+            return
+        delta = event.pos() - self.old_pos
+        self.move(self.pos() + delta)
+
 def main():
     app = QtWidgets.QApplication(sys.argv)
     window = Ui()
