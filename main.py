@@ -8,6 +8,7 @@ class Ui(QtWidgets.QMainWindow):
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.show()
+        print(123)
 
     def mousePressEvent(self, event):
         if event.button() == QtCore.Qt.LeftButton:
