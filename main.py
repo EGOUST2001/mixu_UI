@@ -1,5 +1,15 @@
+import PyQt5
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 import sys, xres_rs
+
+
+if hasattr(QtCore.Qt, 'AA_EnableHighDpiScaling'):
+    PyQt5.QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
+
+if hasattr(QtCore.Qt, 'AA_UseHighDpiPixmaps'):
+    PyQt5.QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
+
+QT_AUTO_SCREEN_SCALE_FACTOR=1
 
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):

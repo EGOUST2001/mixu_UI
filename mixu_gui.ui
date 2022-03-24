@@ -10,6 +10,12 @@
     <height>480</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -17,8 +23,8 @@
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>25</x>
-      <y>25</y>
+      <x>10</x>
+      <y>10</y>
       <width>670</width>
       <height>430</height>
      </rect>
@@ -78,7 +84,7 @@ border-radius: 25px</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btn_state_1">
          <property name="maximumSize">
           <size>
            <width>1000</width>
@@ -86,28 +92,28 @@ border-radius: 25px</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">QPushButton#pushButton
+          <string notr="true">QPushButton#btn_state_1
 {
 background-color:rgb(136, 147, 147);
 border-radius:5px;
 font-size:15px
 }
-QPushButton#pushButton:hover
+QPushButton#btn_state_1:hover
 {
 background-color: rgb(255, 255, 255);
 }
-QPushButton#pushButton:pressed
+QPushButton#btn_state_1:pressed
 {
 font-size:13px
 }</string>
          </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>Поступление</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="btn_state_2">
          <property name="maximumSize">
           <size>
            <width>1000</width>
@@ -115,28 +121,28 @@ font-size:13px
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">QPushButton#pushButton_2
+          <string notr="true">QPushButton#btn_state_2
 {
 background-color:rgb(136, 147, 147);
 border-radius:5px;
 font-size:15px
 }
-QPushButton#pushButton_2:hover
+QPushButton#btn_state_2:hover
 {
 background-color: rgb(255, 255, 255);
 }
-QPushButton#pushButton_2:pressed
+QPushButton#btn_state_2:pressed
 {
 font-size:13px
 }</string>
          </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>Выдача</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="btn_state_3">
          <property name="maximumSize">
           <size>
            <width>1000</width>
@@ -144,23 +150,23 @@ font-size:13px
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">QPushButton#pushButton_3
+          <string notr="true">QPushButton#btn_state_3
 {
 background-color:rgb(136, 147, 147);
 border-radius:5px;
 font-size:15px
 }
-QPushButton#pushButton_3:hover
+QPushButton#btn_state_3:hover
 {
 background-color: rgb(255, 255, 255);
 }
-QPushButton#pushButton_3:pressed
+QPushButton#btn_state_3:pressed
 {
 font-size:13px
 }</string>
          </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>Возврат</string>
          </property>
         </widget>
        </item>
@@ -220,7 +226,7 @@ font-size:13px
        <string>Program3</string>
       </property>
      </widget>
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="checkBox_1">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -242,15 +248,15 @@ font-size:13px
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">QCheckBox#checkBox:indicator {
+       <string notr="true">QCheckBox#checkBox_1:indicator {
     width: 40px;
     height: 40px;
 }
-QCheckBox#checkBox:indicator:unchecked {
+QCheckBox#checkBox_1:indicator:unchecked {
   image: url(:/check/2.png)
 }
 
-QCheckBox#checkBox:indicator:checked {
+QCheckBox#checkBox_1:indicator:checked {
    image: url(:/check/1.png)
 }
 </string>
@@ -337,7 +343,7 @@ QCheckBox#checkBox_3:indicator:checked {
        <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="lineEdit_login_1">
       <property name="geometry">
        <rect>
         <x>30</x>
@@ -359,7 +365,7 @@ color:rgba(255, 255, 255, 230);
 padding-bottom:7px;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="lineEdit_password_1">
       <property name="geometry">
        <rect>
         <x>30</x>
@@ -384,7 +390,7 @@ padding-bottom:7px;</string>
        <enum>QLineEdit::Password</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="lineEdit_login_2">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -406,7 +412,7 @@ color:rgba(255, 255, 255, 230);
 padding-bottom:7px;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_4">
+     <widget class="QLineEdit" name="lineEdit_password_2">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -431,7 +437,7 @@ padding-bottom:7px;</string>
        <enum>QLineEdit::Password</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_5">
+     <widget class="QLineEdit" name="lineEdit_login_3">
       <property name="geometry">
        <rect>
         <x>490</x>
@@ -453,7 +459,7 @@ color:rgba(255, 255, 255, 230);
 padding-bottom:7px;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
+     <widget class="QLineEdit" name="lineEdit_password_3">
       <property name="geometry">
        <rect>
         <x>490</x>
@@ -478,7 +484,7 @@ padding-bottom:7px;</string>
        <enum>QLineEdit::Password</enum>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="btn_save_log">
       <property name="geometry">
        <rect>
         <x>30</x>
@@ -494,17 +500,17 @@ padding-bottom:7px;</string>
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton#pushButton_4
+       <string notr="true">QPushButton#btn_save_log
 {
 background-color:rgb(136, 147, 147);
 border-radius:5px;
 font-size:15px
 }
-QPushButton#pushButton_4:hover
+QPushButton#btn_save_log:hover
 {
 background-color: rgb(255, 255, 255);
 }
-QPushButton#pushButton_4:pressed
+QPushButton#btn_save_log:pressed
 {
 font-size:13px
 }</string>
@@ -528,6 +534,114 @@ border-radius: 25px</string>
       </property>
      </widget>
     </widget>
+    <widget class="QPushButton" name="btn_trey">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>5</y>
+       <width>20</width>
+       <height>10</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btn_trey
+{
+background-color:rgb(136, 147, 147);
+border-radius:5px
+}
+QPushButton#btn_trey:hover
+{
+background-color:rgb(200, 0, 0);
+border-radius:5px
+}
+QPushButton#btn_trey:pressed
+{
+background-color:rgb(150, 0, 0);
+border-radius:5px
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_close">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>5</y>
+       <width>20</width>
+       <height>10</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btn_close
+{
+background-color:rgb(136, 147, 147);
+border-radius:5px
+}
+QPushButton#btn_close:hover
+{
+background-color:rgb(0, 200, 0);
+border-radius:5px
+}
+QPushButton#btn_close:pressed
+{
+background-color:rgb(0, 150, 0);
+border-radius:5px
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(255, 255, 255);
+background:transparent;
+border-radius:100px;</string>
+     </property>
+     <property name="text">
+      <string>Mixu-warehouse</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_6" native="true">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>0</y>
+       <width>100</width>
+       <height>420</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(35, 39, 39);
+border-radius: 25px</string>
+     </property>
+    </widget>
+    <zorder>widget_6</zorder>
+    <zorder>widget_2</zorder>
+    <zorder>btn_trey</zorder>
+    <zorder>btn_close</zorder>
+    <zorder>label_4</zorder>
    </widget>
   </widget>
  </widget>
